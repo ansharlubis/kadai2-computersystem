@@ -7,15 +7,14 @@ struct node{
 };
 
 int put(struct node *head, int val){
-	struct node *temp;
 	struct node *new;
 	new = (struct node *)malloc(sizeof(struct node));
 	if (new == NULL) return -1;
 
-	temp = head;
-	head = new;
+	new -> val = head -> val;
+	new -> next = head -> next;
 	head -> val = val;
-	head -> next = temp;
+	head -> next = new;
 
 	return 0;
 }
