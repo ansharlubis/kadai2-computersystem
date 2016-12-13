@@ -38,7 +38,6 @@ int get(struct node *head){
 	free(t -> next);
 
 	return p;
-	
 }
 
 int delete(struct node *head, int val){
@@ -79,7 +78,7 @@ void display(struct node *head){
 
 int main(){
 	struct node head = {-1, NULL};
-	int nums[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+	int nums[] = {0, 1, 2, 3, 4, 5, 43, 7, 8, 9};
 	int i, res;
 
 	for(i = 0; i < 10; i++){
