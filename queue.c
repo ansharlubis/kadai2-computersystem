@@ -66,8 +66,6 @@ int delete(struct node *head, int val){
 }
 
 void display(struct node *head){
-	struct node *t = head;
-
 	if(head -> next == NULL){
 		printf("%d ", head -> val);
 	} else {
